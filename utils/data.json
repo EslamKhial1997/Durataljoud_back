@@ -1,0 +1,233 @@
+[
+  {
+    "floor": "الارضي",
+    "number": 1,
+    "area": 86.1,
+    "balconyArea": 0.0,
+    "totalArea": 86.1,
+    "type": "معرض تجاري",
+    "description": "مساحة مفتوحة + دورة مياه",
+    "balcony": "لايوجد",
+    "parking": 4.0
+  },
+  {
+    "floor": "الارضي",
+    "number": 2,
+    "area": 74.78,
+    "balconyArea": 0.0,
+    "totalArea": 74.78,
+    "type": "معرض تجاري",
+    "description": "مساحة مفتوحة + دورة مياه",
+    "balcony": "لايوجد",
+    "parking": 4.0
+  },
+  {
+    "floor": "الارضي",
+    "number": 3,
+    "area": 44.36,
+    "balconyArea": 0.0,
+    "totalArea": 44.36,
+    "type": "معرض تجاري",
+    "description": "مساحة مفتوحة + دورة مياه",
+    "balcony": "لايوجد",
+    "parking": 4.0
+  },
+  {
+    "floor": "الارضي",
+    "number": 4,
+    "area": 37.88,
+    "balconyArea": 0.0,
+    "totalArea": 37.88,
+    "type": "معرض تجاري",
+    "description": "مساحة مفتوحة + دورة مياه",
+    "balcony": "لايوجد",
+    "parking": 4.0
+  },
+  {
+    "floor": "الارضي",
+    "number": 5,
+    "area": 72.95,
+    "balconyArea": 0.0,
+    "totalArea": 72.95,
+    "type": "معرض تجاري",
+    "description": "مساحة مفتوحة + دورة مياه",
+    "balcony": "لايوجد",
+    "parking": 4.0
+  },
+  {
+    "floor": "الاول",
+    "number": 6,
+    "area": 113.1,
+    "balconyArea": 0.0,
+    "totalArea": 113.1,
+    "type": "مكتب",
+    "description": "مساحة مفتوحة + دورة مياه",
+    "balcony": "لايوجد",
+    "parking": 4.0
+  },
+  {
+    "floor": "الاول",
+    "number": 7,
+    "area": 101.12,
+    "balconyArea": 0.0,
+    "totalArea": 101.12,
+    "type": "مكتب",
+    "description": "مساحة مفتوحة + دورة مياه",
+    "balcony": "لايوجد",
+    "parking": 4.0
+  },
+  {
+    "floor": "الاول",
+    "number": 8,
+    "area": 124.91,
+    "balconyArea": 39.02,
+    "totalArea": 163.94,
+    "type": "مكتب",
+    "description": "مساحة مفتوحة + دورة مياه + بلكونه",
+    "balcony": "يوجد",
+    "parking": 4.0
+  },
+  {
+    "floor": "الاول",
+    "number": 9,
+    "area": 127.49,
+    "balconyArea": 0.0,
+    "totalArea": 127.49,
+    "type": "مكتب",
+    "description": "مساحة مفتوحة + دورة مياه",
+    "balcony": "لايوجد",
+    "parking": 4.0
+  },
+  {
+    "floor": "الاول",
+    "number": 10,
+    "area": 46.5,
+    "balconyArea": 0.0,
+    "totalArea": 46.5,
+    "type": "كفي",
+    "description": "مساحة مفتوحة + مكان غسيل",
+    "balcony": "لايوجد",
+    "parking": 1.0
+  },
+  {
+    "floor": "الثاني",
+    "number": 11,
+    "area": 195.88,
+    "balconyArea": 36.85,
+    "totalArea": 232.74,
+    "type": "مكتب",
+    "description": "مساحة مفتوحة + دورة مياه + بلكونه",
+    "balcony": "يوجد",
+    "parking": 4.0
+  },
+  {
+    "floor": "الثاني",
+    "number": 12,
+    "area": 181.2,
+    "balconyArea": 8.04,
+    "totalArea": 189.24,
+    "type": "مكتب",
+    "description": "مساحة مفتوحة + دورة مياه + بلكونه",
+    "balcony": "يوجد",
+    "parking": 4.0
+  },
+  {
+    "floor": "الثاني",
+    "number": 13,
+    "area": 159.32,
+    "balconyArea": 0.0,
+    "totalArea": 159.32,
+    "type": "مكتب",
+    "description": "مساحة مفتوحة + دورة مياه",
+    "balcony": "لايوجد",
+    "parking": 4.0
+  },
+  {
+    "floor": "الثالث",
+    "number": 14,
+    "area": 116.57,
+    "balconyArea": 15.09,
+    "totalArea": 131.67,
+    "type": "مكتب",
+    "description": "مساحة مفتوحة + دورة مياه + بلكونه",
+    "balcony": "يوجد",
+    "parking": 4.0
+  },
+  {
+    "floor": "الثالث",
+    "number": 15,
+    "area": 100.29,
+    "balconyArea": 0.0,
+    "totalArea": 100.29,
+    "type": "مكتب",
+    "description": "مساحة مفتوحة + دورة مياه",
+    "balcony": "لايوجد",
+    "parking": 4.0
+  },
+  {
+    "floor": "الثالث",
+    "number": 16,
+    "area": 126.02,
+    "balconyArea": 27.11,
+    "totalArea": 153.14,
+    "type": "مكتب",
+    "description": "مساحة مفتوحة + دورة مياه + بلكونه",
+    "balcony": "يوجد",
+    "parking": 4.0
+  },
+  {
+    "floor": "الثالث",
+    "number": 17,
+    "area": 123.44,
+    "balconyArea": 36.65,
+    "totalArea": 160.1,
+    "type": "مكتب",
+    "description": "مساحة مفتوحة + دورة مياه + بلكونه",
+    "balcony": "يوجد",
+    "parking": 4.0
+  },
+  {
+    "floor": "الرابع",
+    "number": 18,
+    "area": 208.18,
+    "balconyArea": 48.78,
+    "totalArea": 256.67,
+    "type": "مكتب",
+    "description": "مساحة مفتوحة + دورة مياه + بلكونه",
+    "balcony": "يوجد",
+    "parking": 4.0
+  },
+  {
+    "floor": "الرابع",
+    "number": 19,
+    "area": 192.35,
+    "balconyArea": 75.04,
+    "totalArea": 267.39,
+    "type": "مكتب",
+    "description": "مساحة مفتوحة + دورة مياه + بلكونه",
+    "balcony": "يوجد",
+    "parking": 4.0
+  },
+  {
+    "floor": "الخامس",
+    "number": 20,
+    "area": 208.18,
+    "balconyArea": 0.0,
+    "totalArea": 208.18,
+    "type": "مكتب",
+    "description": "مساحة مفتوحة + دورة مياه",
+    "balcony": "لايوجد",
+    "parking": 4.0
+  },
+  {
+    "floor": "الخامس",
+    "number": 21,
+    "area": 198.63,
+    "balconyArea": 0.0,
+    "totalArea": 198.63,
+    "type": "مكتب",
+    "description": "مساحة مفتوحة + دورة مياه",
+    "balcony": "لايوجد",
+    "parking": 4.0
+  }
+]
