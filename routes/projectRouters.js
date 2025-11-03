@@ -16,5 +16,6 @@ const {
 } = require("../utils/validators/ChangeStatuseProject");
 
 router.get("/", getProjectData);
+router.put("/:id", toggleApartmentStatus);
 
 module.exports = router;

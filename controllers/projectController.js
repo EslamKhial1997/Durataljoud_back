@@ -60,52 +60,39 @@ exports.getApartmentByName = asyncHandler(async (req, res, next) => {
 });
 
 exports.toggleApartmentStatus = asyncHandler(async (req, res, next) => {
-  const { name } = req.params;
-  const { status } = req.body;
+  const { id } = req.params; // الحصول على معرف الشقة من المعاملات
+  const { status } = req.body; // الحصول على الحالة من الجسم
 
+  // القيم المسموح بها للحالة
   const allowedStatuses = ["available", "sold", "not_offered", "reserved"];
 
-  if (!name) {
+  // التحقق من وجود id في المعاملات
+  if (!id) {
     return next(new ApiError("يجب إرسال اسم الشقة في الـ query", 400));
   }
 
+  // التحقق من وجود status وصحته
   if (!status || !allowedStatuses.includes(status)) {
     return next(new ApiError("الحالة المرسلة غير صحيحة", 400));
   }
 
-  // نجيب المشروع اللي فيه الشقة
-  const project = await mongoose.connection.db.collection("Project").findOne({
-    "blocks.buildings.floors.apartments.name": name,
-  });
+  // تحديث حالة الشقة مباشرة باستخدام findByIdAndUpdate
+  const updatedApartment = await UnitModel.findByIdAndUpdate(
+    id, // البحث عن الشقة باستخدام المعرف
+    { status }, // تحديث الحقل status بالقيمة الجديدة
+    { new: true } // هذه الخيارات تُرجع الكائن المحدث بعد التحديث
+  );
 
-  if (!project) {
+  // إذا كانت الشقة غير موجودة في قاعدة البيانات
+  if (!updatedApartment) {
     return next(new ApiError("الشقة غير موجودة", 404));
   }
 
-  let newStatus = null;
-  project.blocks.forEach((block) => {
-    block.buildings.forEach((building) => {
-      building.floors.forEach((floor) => {
-        floor.apartments.forEach((apartment) => {
-          if (apartment.name === name) {
-            apartment.status = status; // نخليها زي اللي جاي من الـ body
-            newStatus = status;
-          }
-        });
-      });
-    });
-  });
-
-  // حفظ التعديل
-  await mongoose.connection.db
-    .collection("Project")
-    .updateOne({ _id: project._id }, { $set: { blocks: project.blocks } });
-
+  // إرسال استجابة بنجاح العملية
   res.status(200).json({
     status: "success",
-    message: `تم تعديل حالة الشقة (${name}) إلى: ${newStatus}`,
-    apartmentId: name,
-    newStatus,
+    message: `تم تعديل حالة الشقة إلى: ${updatedApartment.status}`,
+    apartmentId: updatedApartment._id,
   });
 });
 

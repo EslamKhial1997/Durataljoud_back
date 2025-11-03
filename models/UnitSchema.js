@@ -33,6 +33,9 @@ const unitSchema = new mongoose.Schema(
     parking: {
       type: Number,
     },
+    status: {
+      type: String,
+    },
   },
   { timestamps: true }
 );
