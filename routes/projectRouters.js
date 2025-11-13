@@ -1,21 +1,15 @@
 const express = require("express");
 const router = express.Router();
 
-const { AuthUser, allowedTO } = require("../controllers/authController");
 const {
-  getApartmentByName,
   toggleApartmentStatus,
-  getProjectDataWithStats,
-  getApartmentsByStatus,
-  ChangeApartmentPrice,
+
   getProjectData,
+  getProjectDataByID,
 } = require("../controllers/projectController");
 
-const {
-  apartmentStatusValidation,
-} = require("../utils/validators/ChangeStatuseProject");
-
 router.get("/", getProjectData);
+router.get("/:id", getProjectDataByID);
 router.put("/:id", toggleApartmentStatus);
 
 module.exports = router;

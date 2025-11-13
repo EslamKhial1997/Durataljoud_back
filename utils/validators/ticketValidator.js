@@ -15,6 +15,10 @@ exports.addTicketValidator = [
     .isLength({ min: 2 })
     .withMessage("⚠️ اسم العائلة يجب أن يحتوي على حرفين على الأقل")
     .trim(),
+  check("email")
+    .trim()
+    .isEmail().withMessage("⚠️ البريد الإلكتروني غير صالح")
+    .normalizeEmail(),
 
   check("phone")
     .notEmpty()

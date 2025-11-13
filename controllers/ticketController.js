@@ -4,15 +4,16 @@ const ApiError = require("../utils/ApiError");
 const ApiFetcher = require("../utils/ApiFetcher");
 
 exports.AddTicket = asyncHandler(async (req, res, next) => {
-  const { firstName, lastName, phone, region, heardAboutUs } = req.body;
+  const { firstName, lastName, email, phone, region, heardAboutUs } = req.body;
 
-  if (!firstName || !lastName || !phone || !region) {
+  if (!firstName || !lastName || !phone || !region || !email) {
     return next(new ApiError("من فضلك إدخل كل البيانات المطلوبة", 400));
   }
 
   const ticket = await Ticket.create({
     firstName,
     lastName,
+    email,
     phone,
     region,
     heardAboutUs,
