@@ -7,12 +7,15 @@ const unitSchema = new mongoose.Schema(
       required: true,
     },
     number: {
-      type: Number,
+      type: String,
       required: true,
     },
     area: {
       type: Number,
       required: true,
+    },
+    price: {
+      type: Number,
     },
     balconyArea: {
       type: Number,

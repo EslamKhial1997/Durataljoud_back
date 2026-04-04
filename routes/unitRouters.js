@@ -7,6 +7,6 @@ const {
 } = require("../controllers/unitController");
 
 router.get("/", getUnitData);
-router.post("/", createUnit); 
+router.post("/", createUnit);
 
 module.exports = router;

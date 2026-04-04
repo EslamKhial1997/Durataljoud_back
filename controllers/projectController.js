@@ -29,7 +29,6 @@ exports.getProjectDataByID = asyncHandler(async (req, res, next) => {
 
 exports.toggleApartmentStatus = asyncHandler(async (req, res, next) => {
   const { id } = req.params;
-
   const allowedStatuses = ["available", "sold", "not_offered", "reserved"];
   if (!id) {
     return next(new ApiError("يجب إرسال اسم الوحدة في الـ query", 400));
@@ -38,6 +37,7 @@ exports.toggleApartmentStatus = asyncHandler(async (req, res, next) => {
   if (req.body.status && !allowedStatuses.includes(req.body.status)) {
     return next(new ApiError("الحالة المرسلة غير صحيحة", 400));
   }
+
   const apartment = await UnitModel.findById(id);
   req.body.newStatus.area
     ? (req.body.newStatus.totalArea =

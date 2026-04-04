@@ -32,6 +32,10 @@ const ticketSchema = new mongoose.Schema(
       default: "Other",
       trim: true,
     },
+    unit: {
+      type: Number,
+      default: "Other",
+    },
   },
   { timestamps: true }
 );
